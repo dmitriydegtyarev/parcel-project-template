@@ -1,5 +1,4 @@
 .section-goal {
-  padding-top: 20px;
   background-color: $color-light-theme;
 }
 
@@ -16,7 +15,7 @@
   justify-content: space-around;
 }
 
-.title-item-goal {
+.title-item {
   text-align: center;
   @include font(900, 20px, 37px);
   color: $secondary-color;

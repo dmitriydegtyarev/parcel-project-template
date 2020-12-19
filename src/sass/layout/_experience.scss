@@ -1,4 +1,86 @@
 .section-experience {
-  padding-top: 20px;
   background: linear-gradient($gradient-inversion-color);
+
+  .title-dark-theme {
+    // display: inline-block;
+    width: 100%;
+    text-align: center;
+    // margin-top: 0;
+    // margin-right: auto;
+    // margin-bottom: 40px;
+    // margin-left: auto;
+  }
+
+  .description {
+    color: $color-dark-theme;
+    text-align: left;
+  }
+}
+
+.list-experience {
+  display: flex;
+  // width: 200px;
+  // justify-content: center;
+  // height: 76px;
+  // flex-wrap: wrap;
+}
+
+.title-item-experience {
+  @include font(700, 20px, 36px);
+  color: $color-dark-theme;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 26px;
+}
+
+.item-experience {
+  width: calc(100% / 5);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    content: '';
+    display: block;
+    width: 78px;
+    height: 78px;
+
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1)::after {
+    background-image: url(../images/experience/pensil.svg);
+  }
+
+  &:nth-child(2)::after {
+    background-image: url(../images/experience/book.svg);
+  }
+
+  &:nth-child(3)::after {
+    background-image: url(../images/experience/dandruff.svg);
+  }
+
+  &:nth-child(4)::after {
+    background-image: url(../images/experience/globe.svg);
+  }
+
+  &:nth-child(5)::after {
+    background-image: url(../images/experience/nature.svg);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: linear-gradient($gradient-color);
+    background-blend-mode: multiply;
+    margin: 0 auto;
+  }
+}
+
+.item-experience:not(:last-child) {
+  margin-right: 25px;
 }
