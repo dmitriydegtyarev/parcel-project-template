@@ -28,6 +28,10 @@
   color: $color-dark-theme;
   background: linear-gradient($gradient-color);
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 160px;
     height: 56px;

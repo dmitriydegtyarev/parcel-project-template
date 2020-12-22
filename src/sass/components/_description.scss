@@ -1,5 +1,14 @@
-.description {
+.description,
+.cell-pupils {
   text-align: center;
   @include font(400, 14px, 17px);
   color: $secondary-color;
+}
+
+.description-works,
+.description-stories,
+.description-footer {
+  @include font(700, 14px, 25px);
+  color: $secondary-color;
+  margin-bottom: 20px;
 }

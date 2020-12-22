@@ -1,0 +1,34 @@
+.section-pupils {
+  background-color: $color-light-theme;
+
+  .button-light-theme {
+    margin-top: 50px;
+  }
+}
+
+.table-pupils {
+  width: 100%;
+  border: 3px solid #efefef;
+  border-radius: 10px;
+}
+
+.table-main-line-pupils {
+  height: 72px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  background-color: $color-dark-theme;
+}
+
+.table-line-pupils {
+  height: 160px;
+
+  &:hover .cell-pupils {
+    background: #efefef;
+    // background-color: $color-light-theme;
+    // border-color: brown;
+  }
+}
+
+.table-line-pupils:hover {
+  background-color: brown;
+}

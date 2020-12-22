@@ -1,6 +1,10 @@
 .section-about {
   background-color: $color-light-theme;
 
+  .container {
+    padding-left: 0;
+  }
+
   .wrapper {
     position: relative;
   }
@@ -23,6 +27,7 @@
 }
 
 .wrapper-description-about {
+  // width: 50%;
   padding-left: 30px;
   padding-right: 30px;
 }
