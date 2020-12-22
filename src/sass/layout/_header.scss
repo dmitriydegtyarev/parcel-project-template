@@ -1,0 +1,18 @@
+.header{
+
+  .list{
+    display: flex;
+    justify-content: center;    
+  }
+  
+  .item{
+    background: -webkit-linear-gradient($gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include font(400, 16px, 18px);
+
+    &:not(:last-child){
+      margin-right: 40px;
+    }
+  }
+}
