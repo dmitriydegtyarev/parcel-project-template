@@ -7,3 +7,19 @@
 
   @include font(900, 40px, 63px);
 }
+
+.title-dark-theme {
+  margin-bottom: 20px;
+  @include font(900, 24px, 50px);
+  color: $color-dark-theme;
+}
+
+.title-item,
+.main-cell-pupils {
+  text-align: center;
+  @include font(900, 20px, 37px);
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-top: 32px;
+  margin-bottom: 14px;
+}

@@ -51,3 +51,26 @@
   display: block;
   width: 300px;
 }
+
+.list-achivements-portfolio {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.item-achivements-portfolio {
+  border: 2px solid #ff8a00;
+  border-radius: 4px 4px 4px 4px;
+
+  &:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
